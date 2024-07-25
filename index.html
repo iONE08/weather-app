@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Weather app</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="left">
+      <p class="temperature"><span class="temperature-value">16</span>°C</p>
+
+      <div class="info">
+        <p class="location">London</p>
+        <div class="time">
+            <p class="time ist-time"></p>
+            <p class="day"></p>
+        </div>
+      </div>
+
+      <div class="weather-icon">
+        <i class="fa-solid fa-cloud"></i>
+      </div>
+    </div>
+
+
+
+    <div class="right">
+
+      <form>
+        <input type="text" placeholder="Search Location...">
+        <button type="submit" class="search-btn">
+          <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+        </button>
+      </form>
+
+      <p class="para">Weather Details...</p>
+
+      <div class="temperature-info">
+        <div class="weather-detail ">
+          <p class="para-1">Temp max</p>
+          <div>
+            <p class="para-2" id="temp-max">19°C</p>
+            <i class="fa-solid fa-temperature-three-quarters" style="color: #ff6347;"></i>
+          </div>
+        </div>
+
+        <div class="weather-detail">
+          <p class="para-1">Temp min</p>
+          <div>
+            <p class="para-2" id="temp-min">15°C</p>
+            <i class="fa-solid fa-temperature-quarter" style="color: #87CEFA;"></i>
+          </div>
+        </div>
+
+        <div class="weather-detail">
+          <p class="para-1">Humidity</p>
+          <div>
+            <p class="para-2" id="humidity"><span class="humidity-value">58</span>%</p>
+            <i class="fa-solid fa-droplet" style="color: #ffffff;"></i>
+          </div>
+        </div>
+
+        <div class="weather-detail">
+          <p class="para-1">Cloudy</p>
+          <div>
+            <p class="para-2" id="cloudy">86%</p>
+            <i class="fa-solid fa-cloud" style="color: #ffffff;"></i>
+          </div>
+        </div>
+
+        <div class="weather-detail">
+          <p class="para-1">Wind</p>
+          <div>
+            <p class="para-2" id="wind">5km/h</p>
+            <i class="fa-solid fa-wind" style="color: #ffffff;"></i>
+          </div>
+        </div>
+      </div>
+
+      <p class="error-message">
+        
+      </p>
+      
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
